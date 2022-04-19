@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[tbl_Exam_Data_Type] (
+    [Measure_num]                  VARCHAR (50)  NULL,
+    [Examdate]                     VARCHAR (50)  NULL,
+    [Exam_Unique_ID]               VARCHAR (500) NULL,
+    [Exam_TIN]                     VARCHAR (10)  NULL,
+    [Physician_NPI]                VARCHAR (50)  NULL,
+    [Patient_ID]                   VARCHAR (500) NULL,
+    [Patient_Age]                  VARCHAR (10)  NULL,
+    [Patient_Gender]               VARCHAR (50)  NULL,
+    [Patient_Medicare_Beneficiary] VARCHAR (50)  NULL,
+    [Patient_Medicare_Advantage]   VARCHAR (50)  NULL,
+    [CMS_Submission_Year]          VARCHAR (50)  NULL,
+    [DecryptPatient_Id]            VARCHAR (500) NULL,
+    [Procedure_Code]               VARCHAR (50)  NULL,
+    [Criteria]                     VARCHAR (20)  NULL,
+    [warningFound]                 BIT           DEFAULT ((0)) NOT NULL,
+    [Denominator_proc_code]        VARCHAR (50)  NULL,
+    [Denominator_Diag_code]        VARCHAR (50)  NULL,
+    [Numerator_response_value]     VARCHAR (50)  NULL,
+    [Status]                       VARCHAR (50)  NULL,
+    [Numerator_Code]               VARCHAR (100) NULL,
+    [Other_Question_num]           VARCHAR (50)  NULL,
+    [Response_Value]               VARCHAR (50)  NULL
+);
+

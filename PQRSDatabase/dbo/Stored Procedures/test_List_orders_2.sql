@@ -1,0 +1,2 @@
+﻿CREATE PROCEDURE test_List_orders_2 @fromdate datetime AS
+   SELECT * FROM tbl_PQRS_FILE_UPLOAD_HISTORY WHERE UPLOAD_START_DATE_TIME > @fromdate

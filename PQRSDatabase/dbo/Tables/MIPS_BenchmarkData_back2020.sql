@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[MIPS_BenchmarkData_back2020] (
+    [Measure_Name]       VARCHAR (MAX) NULL,
+    [Measure_ID]         VARCHAR (MAX) NULL,
+    [Collection_Type]    VARCHAR (255) NULL,
+    [Measure_Type]       VARCHAR (255) NULL,
+    [Benchmark]          VARCHAR (255) NULL,
+    [Standard_Deviation] VARCHAR (255) NULL,
+    [Average]            VARCHAR (255) NULL,
+    [Decile_3_from]      VARCHAR (255) NULL,
+    [Decile_3_to]        VARCHAR (255) NULL,
+    [Decile_4_from]      VARCHAR (255) NULL,
+    [Decile_4_to]        VARCHAR (255) NULL,
+    [Decile_5_from]      VARCHAR (255) NULL,
+    [Decile_5_to]        VARCHAR (255) NULL,
+    [Decile_6_from]      VARCHAR (255) NULL,
+    [Decile_6_to]        VARCHAR (255) NULL,
+    [Decile_7_from]      VARCHAR (255) NULL,
+    [Decile_7_to]        VARCHAR (255) NULL,
+    [Decile_8_from]      VARCHAR (255) NULL,
+    [Decile_8_to]        VARCHAR (255) NULL,
+    [Decile_9_from]      VARCHAR (255) NULL,
+    [Decile_9_to]        VARCHAR (255) NULL,
+    [Decile_10_from]     VARCHAR (255) NULL,
+    [Decile_10_to]       VARCHAR (255) NULL,
+    [TOPPED_OUT]         VARCHAR (255) NULL,
+    [SevenPointCap]      VARCHAR (255) NULL
+);
+

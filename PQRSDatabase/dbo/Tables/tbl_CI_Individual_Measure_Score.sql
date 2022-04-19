@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[tbl_CI_Individual_Measure_Score] (
+    [Individual_Mes_ScoreId]          INT             IDENTITY (1, 1) NOT NULL,
+    [Measure_Name]                    VARCHAR (50)    NULL,
+    [Measure_Score]                   DECIMAL (18, 4) NULL,
+    [processingStatus]                VARCHAR (500)   NULL,
+    [totaldecileScore]                DECIMAL (18, 4) NULL,
+    [totalMeasurementPoints]          DECIMAL (18, 4) NULL,
+    [totalBonusPoints]                DECIMAL (18, 4) NULL,
+    [measurementPicker]               VARCHAR (MAX)   NULL,
+    [feedback_quality]                VARCHAR (MAX)   NULL,
+    [endToEndBonus]                   DECIMAL (18, 4) NULL,
+    [outcomeOrPatientExperienceBonus] DECIMAL (18, 4) NULL,
+    [highPriorityBonus]               DECIMAL (18, 4) NULL,
+    [decile]                          DECIMAL (18, 4) NULL,
+    [Contribution_Value]              DECIMAL (18, 4) NULL,
+    [Max_Contribution]                DECIMAL (18, 4) NULL,
+    [Measure_Weight]                  VARCHAR (100)   NULL,
+    [Ia_Complete]                     VARCHAR (100)   NULL,
+    [Pi_Type]                         VARCHAR (100)   NULL,
+    [Ia_Message]                      VARCHAR (MAX)   NULL,
+    [Notes]                           VARCHAR (MAX)   NULL,
+    [Category_Id]                     INT             NULL,
+    [Sub_ScoreId]                     INT             NULL,
+    CONSTRAINT [PK_tbl_CI_Individual_Measure_Score] PRIMARY KEY CLUSTERED ([Individual_Mes_ScoreId] ASC),
+    CONSTRAINT [FK_tbl_CI_Individual_Measure_Score_tbl_CI_Submission_Score] FOREIGN KEY ([Sub_ScoreId]) REFERENCES [dbo].[tbl_CI_Submission_Score] ([Sub_ScoreId]),
+    CONSTRAINT [FK_tbl_CI_Individual_Measure_Score_tbl_lookup_Categories] FOREIGN KEY ([Category_Id]) REFERENCES [dbo].[tbl_CI_lookup_Categories] ([Category_Id])
+);
+

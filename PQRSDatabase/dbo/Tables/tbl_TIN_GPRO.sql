@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[tbl_TIN_GPRO] (
+    [TIN]        VARCHAR (11) NOT NULL,
+    [is_GPRO]    BIT          CONSTRAINT [DF_tbl_TIN_GPRO_is_GPRO] DEFAULT ((0)) NOT NULL,
+    [createdate] DATETIME     NULL,
+    CONSTRAINT [PK_tbl_TIN_GPRO] PRIMARY KEY CLUSTERED ([TIN] ASC)
+);
+

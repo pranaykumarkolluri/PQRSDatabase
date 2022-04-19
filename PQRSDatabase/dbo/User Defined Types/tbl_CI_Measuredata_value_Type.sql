@@ -1,0 +1,23 @@
+﻿CREATE TYPE [dbo].[tbl_CI_Measuredata_value_Type] AS TABLE (
+    [Mid]                         INT           NOT NULL,
+    [CategoryId]                  INT           NULL,
+    [TIN]                         VARCHAR (9)   NULL,
+    [NPI]                         VARCHAR (10)  NULL,
+    [KeyId]                       INT           NOT NULL,
+    [Measure_Type]                VARCHAR (5)   NULL,
+    [Measure_Name]                VARCHAR (50)  NOT NULL,
+    [isEndToEndReported]          VARCHAR (10)  NULL,
+    [performanceMet]              VARCHAR (50)  NULL,
+    [eligiblePopulationExclusion] VARCHAR (50)  NULL,
+    [eligiblePopulationException] VARCHAR (50)  NULL,
+    [eligiblePopulation]          VARCHAR (50)  NULL,
+    [reportingRate]               VARCHAR (50)  NULL,
+    [performanceRate]             VARCHAR (50)  NULL,
+    [numerator]                   VARCHAR (50)  NULL,
+    [denominator]                 VARCHAR (50)  NULL,
+    [denominatorException]        VARCHAR (50)  NULL,
+    [numeratorExclusion]          VARCHAR (50)  NULL,
+    [valuebit]                    VARCHAR (50)  NULL,
+    [StratumId]                   VARCHAR (50)  NULL,
+    [Stratum_Name]                VARCHAR (250) NULL);
+

@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[tbl_PQRS_FILE_UPLOAD_HISTORY_bak] (
+    [FILE_NAME]                           VARCHAR (256) NOT NULL,
+    [UPLOAD_START_DATE_TIME]              DATETIME      NULL,
+    [UPLOAD_END_DATE_TIME]                DATETIME      NULL,
+    [ERROR_MESSAGE]                       VARCHAR (MAX) NULL,
+    [TOTAL_RECORDS_COUNT]                 BIGINT        NULL,
+    [STATUS]                              VARCHAR (256) NULL,
+    [NPI]                                 VARCHAR (50)  NULL,
+    [Load_Start_Time]                     DATETIME      NULL,
+    [Load_End_Time]                       DATETIME      NULL,
+    [Invalid_Records_Count]               BIGINT        NULL,
+    [Updated_Records_Count]               BIGINT        NULL,
+    [Added_Records_Count]                 BIGINT        NULL,
+    [Extension]                           VARCHAR (50)  NULL,
+    [ID]                                  INT           IDENTITY (1, 1) NOT NULL,
+    [UserID]                              INT           NULL,
+    [IsFile_Encrypted]                    BIT           NOT NULL,
+    [Encryption_Type]                     VARCHAR (50)  NULL,
+    [FacilityID]                          VARCHAR (50)  NULL,
+    [NRDRUserID]                          NVARCHAR (50) NULL,
+    [isFacility]                          BIT           NULL,
+    [Updated_Records_WithWarning_Count]   INT           NULL,
+    [Added_Records_WithWarning_Count]     INT           NULL,
+    [Invalid_Records_WithExclusion_Count] INT           NULL,
+    [IPAddress]                           VARCHAR (50)  NULL
+);
+

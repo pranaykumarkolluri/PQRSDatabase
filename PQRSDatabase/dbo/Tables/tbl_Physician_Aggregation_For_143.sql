@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[tbl_Physician_Aggregation_For_143] (
+    [Agg_Id]                INT           IDENTITY (1, 1) NOT NULL,
+    [Physician_NPI]         VARCHAR (50)  NULL,
+    [Exam_TIN]              VARCHAR (10)  NULL,
+    [Patient_ID]            VARCHAR (500) NULL,
+    [Exam_Date]             DATETIME      NULL,
+    [CMS_Submission_Year]   INT           NULL,
+    [Measure_ID]            INT           NULL,
+    [Measure_Num]           VARCHAR (50)  NULL,
+    [Denominator_proc_code] VARCHAR (50)  NULL,
+    [Numerator_Code]        VARCHAR (100) NULL,
+    [Created_Date]          DATETIME      NULL,
+    [Created_By]            VARCHAR (50)  NULL,
+    [Criteria]              VARCHAR (20)  NULL,
+    [IsMain_ProcCode]       BIT           NULL,
+    [Performance_Met]       BIT           NULL,
+    [Performance_NotMet]    BIT           NULL,
+    [Denominator_Exception] BIT           NULL,
+    [Is_EligiblePopulation] BIT           NULL,
+    [Is_ValidRecord]        BIT           NULL,
+    [Validation_Msg]        VARCHAR (500) NULL,
+    [IS_PreDateExist]       BIT           NULL,
+    [IS_PostDateExist]      BIT           NULL,
+    CONSTRAINT [PK_tbl_Physician_Aggregation_For_143] PRIMARY KEY CLUSTERED ([Agg_Id] ASC)
+);
+

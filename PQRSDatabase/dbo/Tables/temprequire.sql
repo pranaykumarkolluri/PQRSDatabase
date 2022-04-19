@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[temprequire] (
+    [Import_examID]                             INT           NOT NULL,
+    [Import_ExamsID]                            INT           NULL,
+    [Import_Physician_Group_TIN]                VARCHAR (50)  NULL,
+    [Import_Exam_Unique_ID]                     VARCHAR (500) NULL,
+    [Import_Exam_DateTime]                      VARCHAR (50)  NULL,
+    [Import_Physician_NPI]                      VARCHAR (50)  NULL,
+    [Import_First_Name]                         VARCHAR (50)  NULL,
+    [Import_Last_Name]                          VARCHAR (50)  NULL,
+    [Import_Patient_ID]                         VARCHAR (500) NULL,
+    [Import_Patient_Age]                        VARCHAR (50)  NULL,
+    [Import_Patient_Gender]                     VARCHAR (50)  NULL,
+    [Import_Patient_Medicare_Beneficiary]       VARCHAR (50)  NULL,
+    [Import_Patient_Medicare_Advantage]         VARCHAR (50)  NULL,
+    [Import_Num_of_Measures_Included]           VARCHAR (50)  NULL,
+    [Error_Codes_Desc]                          VARCHAR (MAX) NULL,
+    [Correct_Measure_DataCount]                 INT           NULL,
+    [Incorrect_Measure_DataCount]               INT           NULL,
+    [Status]                                    INT           NULL,
+    [No_of_Errors]                              INT           NULL,
+    [Error_Codes_JSON]                          VARCHAR (MAX) NULL,
+    [isEncrypt]                                 BIT           NOT NULL,
+    [Correct_Measure_DataWith_WarningCount]     INT           NULL,
+    [InCorrect_Measure_DataWith_ExclusionCount] INT           NULL
+);
+

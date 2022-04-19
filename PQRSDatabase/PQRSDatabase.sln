@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PQRSDatabase", "PQRSDatabase.sqlproj", "{211711C6-E7B7-4687-9AFB-17D21174B7FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{211711C6-E7B7-4687-9AFB-17D21174B7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211711C6-E7B7-4687-9AFB-17D21174B7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211711C6-E7B7-4687-9AFB-17D21174B7FA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{211711C6-E7B7-4687-9AFB-17D21174B7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211711C6-E7B7-4687-9AFB-17D21174B7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211711C6-E7B7-4687-9AFB-17D21174B7FA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59A290C6-7D3E-42F2-9465-CA251CA4B79A}
+	EndGlobalSection
+EndGlobal

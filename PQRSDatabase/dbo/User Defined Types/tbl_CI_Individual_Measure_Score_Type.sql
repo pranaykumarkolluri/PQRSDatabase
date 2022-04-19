@@ -1,0 +1,22 @@
+﻿CREATE TYPE [dbo].[tbl_CI_Individual_Measure_Score_Type] AS TABLE (
+    [Measure_Name]                    VARCHAR (50)    NULL,
+    [Measure_Score]                   DECIMAL (18, 4) NULL,
+    [processingStatus]                VARCHAR (500)   NULL,
+    [totaldecileScore]                DECIMAL (18, 4) NULL,
+    [totalMeasurementPoints]          DECIMAL (18, 4) NULL,
+    [totalBonusPoints]                DECIMAL (18, 4) NULL,
+    [measurementPicker]               VARCHAR (MAX)   NULL,
+    [feedback_quality]                VARCHAR (MAX)   NULL,
+    [endToEndBonus]                   DECIMAL (18, 4) NULL,
+    [outcomeOrPatientExperienceBonus] DECIMAL (18, 4) NULL,
+    [highPriorityBonus]               DECIMAL (18, 4) NULL,
+    [decile]                          DECIMAL (18, 4) NULL,
+    [Contribution_Value]              DECIMAL (18, 4) NULL,
+    [Max_Contribution]                DECIMAL (18, 4) NULL,
+    [Measure_Weight]                  VARCHAR (100)   NULL,
+    [Ia_Complete]                     VARCHAR (100)   NULL,
+    [Pi_Type]                         VARCHAR (100)   NULL,
+    [Ia_Message]                      VARCHAR (MAX)   NULL,
+    [Notes]                           VARCHAR (MAX)   NULL,
+    [Category_Id]                     INT             NULL);
+
